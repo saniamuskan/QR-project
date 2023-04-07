@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <title>LOGIN details</title>
+  <script type="text/javascript">
+    function validate() {
+      var user = document.f1.u.value;
+      var pwd = document.f1.p.value;
+      if (
+        (user == "245121737302" || "245121737028" || "245121737034") &&
+        pwd == "0000"
+      ) {
+        //window.alert("login success")
+        var opener = window.open(
+          "C:\\Users\\Dell\\Desktop\\QR CODE\\selectionpage.html"
+        );
+
+        //document.write("");
+      } else {
+        window.alert("login fail");
+      }
+    }
+  </script>
+  <head>
+    <title>Login form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Login Form</h1>
+      <form name="f1">
+        <login>
+          <h2>Username</h2>
+          <input type="text" placeholder="user ID" name="u" />
+          <br />
+          <br />
+          <h2>Password</h2>
+          <input type="password" placeholder="your password" name="p" />
+          <br />
+          <br />
+          <br />
+          <input type="submit" placeholder="login" onclick="validate()" />
+        </login>
+      </form>
+    </div>
+  </body>
+</html>
